@@ -3,4 +3,15 @@ body {
 }
 h1 {
   color: white;
+} h2 {
+  color: lime;
+}
+li {
+  color: palevioletred;
+}
+p {
+  color: plum;
+}
+footer {
+  color: aquamarine;
 }
