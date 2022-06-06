@@ -1,47 +1,55 @@
+html {
+  box-sizing: border-box;
+}
+/* The Universal Selector */
+*, /* All elements*/
+*::before, /* All ::before pseudo-elements */
+*::after { /* All ::after pseudo-elements */
+  /* height & width will now include border & padding by default
+     but can be over-ridden as needed */
+  box-sizing: inherit;
+}
 body {
   background-color: grey;
   display: grid;
-  grid-template-areas:
-  "nav nav nav"
-  "h1 h1 h1"
-  "h2 h2 h2"
-  "main main main";
+}
+img {
+  border: 2px solid black;
+  margin-top: 50px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 h1 {
   color: black;
   align-items: center;
-  grid-area: h1;
-  grid-column: 2 / 3;
-} h2 {
+  justify-content: center;
+  display: flex;
+} 
+h2 {
   color: lime;
-  grid-area: h2;
 }
 nav {
-  height: 60px;
+  height: 80px;
   background-color: #ffc09f;
+  flex-direction: row;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  grid-area: nav;
 }
-ul {
-  list-style: none;
+nav > div {
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
 }
 #nav {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
-  margin-left: auto;
   color: palevioletred;
-}
-#nav li {
-	display: block;
-	width: 120px;
-	float: left;
-	margin-left: 2px;
 }
 #nav a {
 	display:block;
-	padding:3px;
 	text-decoration:none;
 	color: red;
 }
@@ -50,7 +58,6 @@ ul {
 }
 p {
   color: plum;
-  grid-area: main;
 }
 footer {
   color: aquamarine;
