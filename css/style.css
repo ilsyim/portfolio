@@ -10,15 +10,17 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-color: #BEC5AD;
+  --body-bg: #A9DEF9;
+  --hover: #453643;
   display: grid;
+  background-color: var(--body-bg);
 }
 img {
   border: 2px solid black;
-  margin-top: 50px;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  text-align: center;
   display: flex;
   width: 200px;
   height: 200px;
@@ -34,7 +36,7 @@ h2 {
 }
 nav {
   height: 80px;
-  background-color: #A63C06;
+  background-color: #D0F4DE;
   flex-direction: row;
   display: flex;
   align-items: center;
@@ -55,7 +57,8 @@ nav > div {
 	color: black;
 }
 #nav a:hover{
-  color: #1768AC;
+  color: var(--hover);
+  background-color: #FF7D00;
 }
 p {
   color: #34252F;

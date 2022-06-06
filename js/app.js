@@ -1,6 +1,20 @@
-myProjects : [
-  {image:, title: "Tic-Tac-Toe", description: "Tic-tac-toe project", github:"https://github.com/ilsyim/ttt-weekend", deploy:"https://ttt-ilysim.netlify.app/"}
-]
+/*-------------------------------- Constants --------------------------------*/
+
+
+/*-------------------------------- Variables --------------------------------*/
+
+
+/*------------------------ Cached Element References ------------------------*/
+document.querySelector(#favicon)
+
+/*----------------------------- Event Listeners -----------------------------*/
+
+
+/*-------------------------------- Functions --------------------------------*/
+// import {projects} from code/sei/labs/ttt-weekend/js/app.js
+
+
+// console.log(projects)
 
 function welcomeMessage(){
 let guestName = prompt("Please enter your name")
