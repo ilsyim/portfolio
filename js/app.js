@@ -5,8 +5,9 @@
 
 
 /*------------------------ Cached Element References ------------------------*/
-document.querySelector(#favicon)
-
+document.querySelector("#favicon")
+const guestMessage = document.querySelector(".message")
+const me = document.querySelector("#me")
 /*----------------------------- Event Listeners -----------------------------*/
 
 
@@ -15,7 +16,15 @@ document.querySelector(#favicon)
 
 
 // console.log(projects)
+// function init(){
 
-function welcomeMessage(){
-let guestName = prompt("Please enter your name")
-}
+// }
+// let guestName = prompt("Please enter your name:")
+// guestMessage.push(`Welcome to my portfolio, ${ guestName}!`)  
+
+me.addEventListener("mouseenter", function(event){
+  event.target.style.color = "#FF7D00" ; 
+  setTimeout (function(){
+    event.target.style.color = ""
+  }, 500)
+})
