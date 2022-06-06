@@ -10,7 +10,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-color: grey;
+  background-color: #BEC5AD;
   display: grid;
 }
 img {
@@ -28,11 +28,11 @@ h1 {
   display: flex;
 } 
 h2 {
-  color: lime;
+  color: #34252F;
 }
 nav {
   height: 80px;
-  background-color: #ffc09f;
+  background-color: #A63C06;
   flex-direction: row;
   display: flex;
   align-items: center;
@@ -46,21 +46,20 @@ nav > div {
 #nav {
   font-size: 25px;
   font-weight: bold;
-  color: palevioletred;
 }
 #nav a {
 	display:block;
 	text-decoration:none;
-	color: red;
+	color: black;
 }
 #nav a:hover{
-  color: black;
+  color: #1768AC;
 }
 p {
-  color: plum;
+  color: #34252F;
 }
 footer {
-  color: aquamarine;
+  color: #34252F;
   position: fixed;
   padding: 10px 10px 0 10px;
   bottom: 0;
