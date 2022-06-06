@@ -20,6 +20,8 @@ img {
   align-items: center;
   justify-content: center;
   display: flex;
+  width: 200px;
+  height: 200px;
 }
 h1 {
   color: black;
