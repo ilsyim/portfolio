@@ -39,12 +39,14 @@ ul {
 	float: left;
 	margin-left: 2px;
 }
-#mainMenu a {
+#nav a {
 	display:block;
 	padding:3px;
 	text-decoration:none;
-	background-color:#fff;
-	color:#009;
+	color: red;
+}
+#nav a:hover{
+  color: black;
 }
 p {
   color: plum;
