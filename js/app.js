@@ -23,8 +23,8 @@ const me = document.querySelector("#me")
 // guestMessage.push(`Welcome to my portfolio, ${ guestName}!`)  
 
 me.addEventListener("mouseenter", function(event){
-  event.target.style.color = "#FF7D00" ; 
+  event.target.style.color = "#f4b860" ; 
   setTimeout (function(){
     event.target.style.color = ""
-  }, 500)
+  }, 700)
 })

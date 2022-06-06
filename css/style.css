@@ -11,10 +11,11 @@ html {
 }
 body {
   --body-bg: #A9DEF9;
-  --hover: #453643;
+  --hover: #E08DAC;
   display: grid;
   background-color: var(--body-bg);
   background: url(../assets/clouds.JPG);
+  font-family: 'Merriweather', serif;
 }
 img {
   border: 2px solid black;
@@ -36,8 +37,8 @@ h2 {
   color: #34252F;
 }
 nav {
-  height: 80px;
-  background-color: #D0F4DE;
+  height: 60px;
+  background-color: #B4D4EE;
   flex-direction: row;
   display: flex;
   align-items: center;
@@ -59,11 +60,22 @@ nav > div {
 	color: black;
 }
 #nav a:hover{
-  color: var(--hover);
-  background-color: #FF7D00;
+  color: #f4b860;
+  background-color: white;
+}
+article {
+  max-width: 500px;
+  padding: 20px;
+  margin: 10px auto;
+  background-color: #f4b860;
+  border: 4px solid whitesmoke;
+  border-radius: 20px;
+  opacity: .9;
+  color: #34252F;
 }
 p {
   color: #34252F;
+  font-size: 20px;
 }
 footer {
   color: #34252F;
