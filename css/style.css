@@ -35,7 +35,7 @@ h1 {
   grid-area: main;
   grid-column: 2 / 4;
 } 
-img {
+#me {
   border: 2px solid black;
   border-radius: 50%;
   align-items: center;
@@ -114,6 +114,10 @@ p {
 .section {
   min-height: 100vh;
   grid-column: 1 / 5;
+}
+#card-container {
+  background-color: none
+  ;
 }
 footer {
   color: #34252F;

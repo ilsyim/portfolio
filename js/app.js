@@ -1,8 +1,7 @@
+import {projectData} from "./project-data.js"
 /*-------------------------------- Constants --------------------------------*/
 
-
 /*-------------------------------- Variables --------------------------------*/
-guestName = ""
 
 /*------------------------ Cached Element References ------------------------*/
 document.querySelector("#favicon")
@@ -14,6 +13,7 @@ const aboutBtn = document.querySelector("#about-button")
 const workBtn = document.querySelector("#work-button")
 const contactBtn = document.querySelector("#contact-button")
 const resumeBtn = document.querySelector("#resume-button")
+const cardContainer = document.getElementById('card-container')
 /*----------------------------- Event Listeners -----------------------------*/
 
 
@@ -49,7 +49,26 @@ const resumeBtn = document.querySelector("#resume-button")
 //   function onClick(){
 //     document.querySelector("#about-button")
 //   }
-// }
+// }'
+
+let projectMarkup = projectData.map(project =>
+`
+  <div class="card text-center" style="width: 18rem;">
+    <img src="${project.image}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">${project.title}</h5>
+      <p class="card-text">${project.description}</p>
+      <div>
+        <a href="${project.github}" class="btn btn-primary">GitHub</a>
+        <a href="${project.deployment}" class="btn btn-secondary">Deployment</a>
+      </div>
+    </div>
+  </div> 
+  
+  `
+  
+  ).join('')
+  cardContainer.innerHTML = projectMarkup
 
 me.addEventListener("mouseenter", function(event){
   event.target.style.color = "#F4B860"; 
