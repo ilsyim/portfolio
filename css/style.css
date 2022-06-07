@@ -14,7 +14,7 @@ body {
   --hover: #E08DAC;
   display: grid;
   background-color: var(--body-bg);
-  background: url(../assets/clouds.JPG);
+  background: url(../assets/clouds.JPG) no-repeat center center fixed;
   font-family: 'Merriweather', serif;
   min-height: 100vh;
   margin: 0;
@@ -35,7 +35,7 @@ h1 {
   grid-area: main;
   grid-column: 2 / 4;
 } 
-#me {
+#my-photo {
   border: 2px solid black;
   border-radius: 50%;
   align-items: center;
@@ -59,15 +59,19 @@ nav {
   flex-direction: row;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   box-shadow: 0 8px 6px -6px #34252F;
   grid-area: nav;
+}
+#name {
+  text-decoration: none;
+  color: black;
 }
 nav,
 footer {
   grid-column: 1 / 5;
 }
-nav > div {
+nav > div { justify-content: flex-end;
   text-decoration: none;
   font-weight: bold;
   margin: 0 10px;
@@ -100,16 +104,16 @@ p {
   font-size: 20px;
 }
 #aboutSect {
-  background-color: lime;
+  /* background-color: lime; */
 }
 #workSect {
-  background-color: red;
+  /* background-color: red; */
 }
 #contactSect {
-  background-color: blue;
+  /* background-color: blue; */
 }
 #resumeSect {
-  background-color: purple;
+  /* background-color: purple; */
 }
 .section {
   min-height: 100vh;
