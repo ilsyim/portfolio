@@ -16,23 +16,37 @@ body {
   background-color: var(--body-bg);
   background: url(../assets/clouds.JPG);
   font-family: 'Merriweather', serif;
+  min-height: 100vh;
+  margin: 0;
+  font-size: 24px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "nav nav nav "
+  "main main main "
+  " . img . "
+  "footer footer footer";
 }
+h1 {
+  color: black;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-area: main;
+  grid-column: 2 / 4;
+} 
 img {
   border: 2px solid black;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
   text-align: center;
-  display: flex;
+  display: grid;
   width: 200px;
   height: 200px;
+  grid-area: img;
+  grid-column-start: 3;
 }
-h1 {
-  color: black;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-} 
 h2 {
   color: #34252F;
 }
@@ -44,27 +58,31 @@ nav {
   align-items: center;
   justify-content: flex-end;
   box-shadow: 0 8px 6px -6px #34252F;
+  grid-area: nav;
+}
+nav,
+footer {
+  grid-column: 1 / 5;
 }
 nav > div {
   text-decoration: none;
   font-weight: bold;
   margin: 0 10px;
 }
-#nav {
+.nav {
   font-size: 25px;
   font-weight: bold;
 }
-#nav a {
+.nav a {
 	display:block;
 	text-decoration:none;
 	color: black;
 }
-#nav a:hover{
+.nav a:hover{
   color: #f4b860;
   background-color: white;
 }
 article {
-  max-width: 500px;
   padding: 20px;
   margin: 10px auto;
   background-color: #f4b860;
@@ -72,14 +90,31 @@ article {
   border-radius: 20px;
   opacity: .9;
   color: #34252F;
+  grid-column: 1 / 5;
 }
 p {
   color: #34252F;
   font-size: 20px;
 }
+#aboutSect {
+  background-color: lime;
+}
+#workSect {
+  background-color: red;
+}
+#contactSect {
+  background-color: blue;
+}
+#resumeSect {
+  background-color: purple;
+}
+.section {
+  height: 650px;
+  grid-column: 1 / 5;
+}
 footer {
   color: #34252F;
-  position: fixed;
+  height: 30px;
   padding: 10px 10px 0 10px;
   bottom: 0;
 }
