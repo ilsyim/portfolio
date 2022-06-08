@@ -134,12 +134,15 @@ article {
   padding: 40px;
   margin: 10px auto;
   background-color: var(--article-bg);
-  border: 4px solid var(--border);
+  border: 5px solid var(--border);
   border-radius: 20px;
   opacity: .9;
   color: var(--article-text);
   grid-column: 1 / 5;
   opacity: .8;
+}
+article > p {
+  color: var(--article-text);
 }
 p {
   color: black;
