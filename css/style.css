@@ -11,7 +11,7 @@ html {
 }
 body {
   --body-bg: #A9DEF9;
-  --hover: #E08DAC;
+  --hover: #F9C846;
   display: grid;
   background-color: var(--body-bg);
   background: url(../assets/clouds.JPG) no-repeat center center fixed;
@@ -27,17 +27,19 @@ body {
   " . img . "
   "footer footer footer";
 }
-h1 {
+#message {
   color: black;
   align-items: center;
   justify-content: center;
   display: grid;
+  padding-top: 30px;
   grid-area: main;
   grid-column: 2 / 4;
-} 
+}
 #my-photo {
   border: 2px solid black;
   border-radius: 50%;
+  margin: 50px 0;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -47,19 +49,22 @@ h1 {
   grid-area: img;
   grid-column-start: 3;
 }
+nav h1:first-of-type {
+  margin-right: auto;
+}
 h2 {
   color: #34252F;
 }
 nav {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1;
   height: 60px;
   background-color: #B4D4EE;
   flex-direction: row;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   box-shadow: 0 8px 6px -6px #34252F;
   grid-area: nav;
 }
@@ -71,14 +76,19 @@ nav,
 footer {
   grid-column: 1 / 5;
 }
-nav > div { justify-content: flex-end;
+nav > div {
+  display: flex;
+  justify-content: flex-end;
   text-decoration: none;
   font-weight: bold;
   margin: 0 10px;
 }
 .nav {
+  display: flex;
+  justify-content: flex-end;
   font-size: 25px;
   font-weight: bold;
+
 }
 .nav a {
 	display:block;
@@ -105,12 +115,25 @@ p {
 }
 #aboutSect {
   /* background-color: lime; */
+  font-size: 20px;
 }
 #workSect {
   /* background-color: red; */
 }
 #contactSect {
   /* background-color: blue; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+#contactSect > a {
+  text-decoration: none;
+  color: black;
+}
+#contactSect > a:hover {
+  color: var(--hover);
 }
 #resumeSect {
   /* background-color: purple; */
@@ -120,12 +143,38 @@ p {
   grid-column: 1 / 5;
 }
 #card-container {
-  background-color: none
-  ;
+  background-color: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.card {
+  background-color: transparent;
+  border: none;
+}
+.card-title {
+  color: yellow;
+}
+.card-text {
+  color: yellow;
+}
+.github {
+  width: 100px;
+}
+.btn btn-primary {
+  background-color: #A9DEF9;
 }
 footer {
   color: #34252F;
   height: 30px;
   padding: 10px 10px 0 10px;
   bottom: 0;
+}
+@media only screen and (min-width:768px) {
+  .card {
+    width: 325px;
+    margin: 30px 15px 0;
+  }
 }

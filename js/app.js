@@ -6,7 +6,7 @@ import {projectData} from "./project-data.js"
 /*------------------------ Cached Element References ------------------------*/
 document.querySelector("#favicon")
 const guestMessage = document.querySelector("#message")
-const me = document.querySelector("#me")
+const message = document.querySelector("#message")
 const sections = document.querySelectorAll(".section")
 const navList = document.querySelectorAll(".nav")
 const aboutBtn = document.querySelector("#about-button")
@@ -70,7 +70,7 @@ let projectMarkup = projectData.map(project =>
   ).join('')
   cardContainer.innerHTML = projectMarkup
 
-me.addEventListener("mouseenter", function(event){
+message.addEventListener("mouseenter", function(event){
   event.target.style.color = "#F4B860"; 
   setTimeout (function(){
     event.target.style.color = ""
