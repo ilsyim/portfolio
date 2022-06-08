@@ -23,8 +23,8 @@ body {
   grid-template-rows: auto;
   grid-template-areas:
   "nav nav nav "
+  " . div . "
   "main main main "
-  " . img . "
   "footer footer footer";
 }
 #message {
@@ -37,18 +37,24 @@ body {
   grid-column: 2 / 4;
   font-weight: bold;
 }
+.image {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  grid-column: 1 / 5;
+}
 #my-photo {
-  border: 2px solid black;
-  border-radius: 50%;
-  margin: 50px 0;
+  margin-top: 50px;
+  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  display: grid;
-  width: 200px;
+  grid-area: main;
+  grid-column: 2 / 4;
+  border: 2px solid black;
+  border-radius: 50%;
   height: 200px;
-  grid-area: img;
-  grid-column-start: 3;
+  width: 200px;
 }
 nav h1:first-of-type {
   margin-right: auto;
