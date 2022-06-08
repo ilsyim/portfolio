@@ -14,6 +14,8 @@ const workBtn = document.querySelector("#work-button")
 const contactBtn = document.querySelector("#contact-button")
 const resumeBtn = document.querySelector("#resume-button")
 const cardContainer = document.getElementById('card-container')
+const ligthDarkBtn = document.querySelector('#light-dark-button')
+const body = document.querySelector('body')
 /*----------------------------- Event Listeners -----------------------------*/
 
 
@@ -69,9 +71,24 @@ let projectMarkup = projectData.map(project =>
   cardContainer.innerHTML = projectMarkup
 
 message.addEventListener("mouseenter", function(event){
-  event.target.style.color = "#F4B860"; 
+  event.target.style.color = "#f4b860"; 
   setTimeout (function(){
     event.target.style.color = ""
   }, 800)
 })
 
+function toggleLightDark() {
+  body.className = body.className === "dark" ? "" : "dark"
+}
+
+function checkDarkPref() {
+ if(
+   window.matchMedia("(prefers-color-scheme:dark)").matches && 
+   body.className !== "dark"
+ ) {
+   toggleLightDark()
+ }
+}
+
+checkDarkPref()
+ligthDarkBtn.addEventListener('click', toggleLightDark)

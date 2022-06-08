@@ -12,6 +12,10 @@ html {
 body {
   --body-bg: #A9DEF9;
   --hover: #f4b860;
+  --text: black;
+  --bg: #b4d4ee;
+  --shadow: black;
+  --light-dark-btn-content: 'Dark Mode';
   display: grid;
   background-color: var(--body-bg);
   background: url(../assets/clouds.JPG) no-repeat center center fixed;
@@ -26,6 +30,12 @@ body {
   " . div . "
   "main main main "
   "footer footer footer";
+}
+body.dark{
+  --light-dark-btn-content: 'Light Mode';
+  --text: #b4d4ee;
+  --bg: black;
+  --shadow: #b4d4ee;
 }
 #message {
   color: black;
@@ -58,22 +68,22 @@ body {
 }
 nav h1:first-of-type {
   margin-right: auto;
-  color: #B4D4EE;
+  color: var(--text);
 }
 h2 {
-  color: #34252F;
+  color: black;
 }
 nav {
   position: sticky;
   top: 0;
   z-index: 1;
   height: 60px;
-  background-color: black;
+  background-color: var(--bg);
   flex-direction: row;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  box-shadow: 0 8px 6px -6px #34252F;
+  box-shadow: 0 8px 6px -6px var(--shadow);
   grid-area: nav;
 }
 #name {
@@ -101,37 +111,43 @@ nav > div {
 .nav a {
 	display: block;
 	text-decoration: none;
-	color: #B4D4EE;
+	color: var(--text);
 }
 .nav a:hover{
-  color: black;
-  background-color: #B4D4EE;
+  color: var(--text);
+  background-color: var(--bg);
   border-radius: 10px;
   height: 50px;
+}
+.btn-ld{
+  border: none;
+  font-size: 24px;
+  font-weight: 600;
 }
 article {
   padding: 40px;
   margin: 10px auto;
-  background-color: #f4b860;
+  background-color: oldlace;
   border: 4px solid #B4D4EE;
   border-radius: 20px;
   opacity: .9;
   color: black;
   grid-column: 1 / 5;
+  opacity: .8;
 }
 p {
-  color: #34252F;
+  color: black;
   font-size: 20px;
 }
 #aboutSect {
-  /* background-color: lime; */
   font-size: 20px;
 }
-#workSect {
-  /* background-color: red; */
+#workSect > p {
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 #contactSect {
-  /* background-color: blue; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -143,9 +159,6 @@ p {
   text-decoration: none;
   color: black;
 }
-#contactSect > a:hover {
-  color: var(--hover);
-}
 .section {
   height: 100vh;
   grid-column: 1 / 5;
@@ -155,6 +168,7 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   width: 100%;
 }
@@ -173,8 +187,7 @@ p {
 #github {
   width: 100px;
 }
-/* #linkedin {
-} */
+/* #linked */
 .btn {
   border: 2px solid #B4D4EE;
   color: #B4D4EE;
@@ -190,6 +203,17 @@ footer {
   height: 30px;
   padding: 10px 10px 0 10px;
   bottom: 0;
+}
+#light-dark-button {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+#light-dark-button::after {
+  border: none;
+  color: var(--text);
+  content: var(--light-dark-btn-content);
+  background-color: var(--bg);
 }
 @media only screen and (min-width:768px) {
   .card {
