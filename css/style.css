@@ -153,30 +153,29 @@ p {
   width: 100%;
 }
 .card {
-  background-color: transparent;
-  border: none;
+  background-color: #22031f;
+  border: 1px solid #c5ebc3;
+  color: #c5ebc3;
 }
 .card-title {
-  color: yellow;
+/* title of project */
 }
 .card-text {
-  color: yellow;
+ /* text "my first project */
+ color: #c5ebc3;
 }
 .github {
   width: 100px;
 }
 .btn {
-  /* border: to change the color & outline of the buttons */
-}
-.btn-primary {
-  background-color: #A9DEF9;
-}
-.btn-secondary {
-  background-color: #A9DEF9;
+  border: 2px solid #B4D4EE;
+  color: #B4D4EE;
+  background-color: black;
 }
 .btn:hover {
-  background-color: var(--hover);
-  color: black;
+  border: 2px solid #22031f;
+  background-color: #c5ebc3;
+  color: #22031f;
 }
 footer {
   color: #34252F;
