@@ -45,11 +45,9 @@ const cardContainer = document.getElementById('card-container')
 //   }
 // })
 
-// aboutBtn.addEventListener("click", onClick) {
-//   function onClick(){
-//     document.querySelector("#about-button")
-//   }
-// }'
+aboutBtn.addEventListener("click", function onClick(){
+
+})
 
 let projectMarkup = projectData.map(project =>
 `
@@ -74,5 +72,6 @@ message.addEventListener("mouseenter", function(event){
   event.target.style.color = "#F4B860"; 
   setTimeout (function(){
     event.target.style.color = ""
-  }, 500)
+  }, 800)
 })
+

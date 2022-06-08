@@ -11,7 +11,7 @@ html {
 }
 body {
   --body-bg: #A9DEF9;
-  --hover: #F9C846;
+  --hover: #f4b860;
   display: grid;
   background-color: var(--body-bg);
   background: url(../assets/clouds.JPG) no-repeat center center fixed;
@@ -35,6 +35,7 @@ body {
   padding-top: 30px;
   grid-area: main;
   grid-column: 2 / 4;
+  font-weight: bold;
 }
 #my-photo {
   border: 2px solid black;
@@ -51,6 +52,7 @@ body {
 }
 nav h1:first-of-type {
   margin-right: auto;
+  color: #B4D4EE;
 }
 h2 {
   color: #34252F;
@@ -60,7 +62,7 @@ nav {
   top: 0;
   z-index: 1;
   height: 60px;
-  background-color: #B4D4EE;
+  background-color: black;
   flex-direction: row;
   display: flex;
   align-items: center;
@@ -91,13 +93,13 @@ nav > div {
 
 }
 .nav a {
-	display:block;
-	text-decoration:none;
-	color: black;
+	display: block;
+	text-decoration: none;
+	color: #B4D4EE;
 }
 .nav a:hover{
-  color: #f4b860;
-  background-color: white;
+  color: black;
+  background-color: #B4D4EE;
 }
 article {
   padding: 20px;
@@ -163,8 +165,18 @@ p {
 .github {
   width: 100px;
 }
-.btn btn-primary {
+.btn {
+  /* border: to change the color & outline of the buttons */
+}
+.btn-primary {
   background-color: #A9DEF9;
+}
+.btn-secondary {
+  background-color: #A9DEF9;
+}
+.btn:hover {
+  background-color: var(--hover);
+  color: black;
 }
 footer {
   color: #34252F;
