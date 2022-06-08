@@ -107,10 +107,10 @@ nav > div {
   color: black;
   background-color: #B4D4EE;
   border-radius: 10px;
-  height: fit-content;
+  height: 50px;
 }
 article {
-  padding: 20px;
+  padding: 40px;
   margin: 10px auto;
   background-color: #f4b860;
   border: 4px solid #B4D4EE;
@@ -137,6 +137,7 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+  height: 200px;
 }
 #contactSect > a {
   text-decoration: none;
@@ -145,11 +146,8 @@ p {
 #contactSect > a:hover {
   color: var(--hover);
 }
-#resumeSect {
-  /* background-color: purple; */
-}
 .section {
-  min-height: 100vh;
+  height: 100vh;
   grid-column: 1 / 5;
 }
 #card-container {
@@ -172,9 +170,11 @@ p {
  /* text "my first project */
  color: #c5ebc3;
 }
-.github {
+#github {
   width: 100px;
 }
+/* #linkedin {
+} */
 .btn {
   border: 2px solid #B4D4EE;
   color: #B4D4EE;
