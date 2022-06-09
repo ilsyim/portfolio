@@ -25,22 +25,6 @@ const activePage = window.location
 // import {projects} from code/sei/labs/ttt-weekend/js/app.js
 
 
-// console.log(projects)
-// function init(){
-
-// }
-
-// I want to try to add a prompt that will let the user enter their name & then add their name to the welcome message.
-// let guestName = prompt("Please enter your name:")
-// guestMessage.push(`Welcome to my portfolio, ${ guestName}!`)
-// guestMessage.addEventListener("onclick", addName){
-//   guestMessage.innerHTML = ""
-//   function addName(){
-    
-
-//   }
-// }  
-
 // I want the nav to highlight which section the user is looking at.
 // sections.forEach((section) => {
 //   const sectionTop = section.offsetTop;
@@ -56,7 +40,7 @@ aboutBtn.addEventListener("click", function onClick(){
 let projectMarkup = projectData.map(project =>
 `
   <div class="card text-center" style="width: 18rem;">
-    <img src="${project.image}" class="card-img-top" alt="...">
+    <img src="${project.image}" class="card-img-top" alt="Picture of Tic-Tac-Toe app">
     <div class="card-body">
       <h5 class="card-title">${project.title}</h5>
       <p class="card-text">${project.description}</p>
