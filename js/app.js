@@ -69,7 +69,7 @@ checkDarkPref()
 ligthDarkBtn.addEventListener("click", toggleLightDark)
 
 profile.addEventListener("click", function(event){
-  event.target.style.width = "30%"
+  event.target.style.width = "40%"
   event.target.style.height = "auto"
   event.target.style.border = "4px solid #f4b860"
   setTimeout (function(){
