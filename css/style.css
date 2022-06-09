@@ -165,7 +165,7 @@ p {
 #aboutSect {
   font-size: 20px;
   margin-top: 50px;
-  margin-bottom: -150px;
+  height: auto;
 }
 #workSect > h3{
   color: #f4b860;
@@ -198,6 +198,7 @@ p {
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-top: 50px;
 }
 .card {
   background-color: #22031f;
@@ -245,13 +246,13 @@ footer > p {
     margin: 30px 15px 0;
   }
   nav{
-
+    width: 100vw;
     grid-column: 1 / 5;
   }
   footer {
     grid-column: 1 / 5;
   }
   #aboutSect {
-    margin-bottom: -50px;
+    margin: 50px;
   }
 }
