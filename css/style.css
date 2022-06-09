@@ -220,6 +220,9 @@ footer {
   bottom: 0;
   font-size: 20px;
   list-style: none;
+  align-items: center;
+  justify-content: center;
+  display: grid;
 }
 #light-dark-button {
   background-color: var(--bg);
