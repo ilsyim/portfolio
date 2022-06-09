@@ -45,7 +45,8 @@ let projectMarkup = projectData.map(project =>
   cardContainer.innerHTML = projectMarkup
 
 message.addEventListener("mouseenter", function(event){
-  event.target.style.color = "#f4b860"; 
+  event.target.style.color = "#f4b860";
+  event.target.style.font = 'bold' 
   setTimeout (function(){
     event.target.style.color = ""
   }, 800)
@@ -68,7 +69,7 @@ checkDarkPref()
 ligthDarkBtn.addEventListener("click", toggleLightDark)
 
 profile.addEventListener("click", function(event){
-  event.target.style.width = "60%"
+  event.target.style.width = "30%"
   event.target.style.height = "auto"
   event.target.style.border = "4px solid #f4b860"
   setTimeout (function(){

@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-padding-top: 5rem;
 }
 /* The Universal Selector */
 *, /* All elements*/
@@ -111,13 +112,6 @@ nav {
   box-shadow: 0 8px 6px -6px var(--shadow);
   grid-area: nav;
 }
-/* li a:is(:link, :active, :visited){
-  color: #f4b860;
-} */
-/* a:is(:link, :active, :visited).active{
-  color: black;
-  background-color: #f4b860;
-} */
 #name {
   text-decoration: none;
   color: black;
@@ -171,7 +165,9 @@ p {
 #aboutSect {
   font-size: 20px;
 }
-#workSect > p {
+#workSect > h3{
+  color: #f4b860;
+  text-shadow: 2px 2px 2px black;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -205,9 +201,6 @@ p {
   background-color: #22031f;
   border: 1px solid #c5ebc3;
   color: #c5ebc3;
-}
-.card-title {
-/* title of project */
 }
 .card-text {
  /* text "my first project */
