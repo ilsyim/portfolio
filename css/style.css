@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   scroll-padding-top: 5rem;
+  overflow: hidden;
 }
 /* The Universal Selector */
 *, /* All elements*/
@@ -23,7 +24,7 @@ body {
   overscroll-behavior: none;
   display: grid;
   background-color: var(--body-bg);
-  background: url(../assets/clouds.JPG) no-repeat center center fixed;
+  background: url(../assets/clouds.JPG) no-repeat center center;
   background-size: cover;
   font-family: 'Merriweather', serif;
   min-height: 100vh;
