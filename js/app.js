@@ -65,13 +65,15 @@ function checkDarkPref() {
 }
 
 checkDarkPref()
-ligthDarkBtn.addEventListener('click', toggleLightDark)
+ligthDarkBtn.addEventListener("click", toggleLightDark)
 
-profile.addEventListener('click', function(event){
-  event.target.style.width = '70%'
-  event.target.style.height = 'auto';
+profile.addEventListener("click", function(event){
+  event.target.style.width = "60%"
+  event.target.style.height = "auto"
+  event.target.style.border = "4px solid #f4b860"
   setTimeout (function(){
-    event.target.style.width = ''
+    event.target.style.width = ""
+    event.target.style.border = ""
   }, 800)
 })
 
