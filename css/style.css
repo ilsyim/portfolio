@@ -251,4 +251,7 @@ footer > p {
   footer {
     grid-column: 1 / 5;
   }
+  #aboutSect {
+    margin-bottom: auto;
+  }
 }
