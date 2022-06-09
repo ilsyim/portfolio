@@ -164,7 +164,8 @@ p {
 }
 #aboutSect {
   font-size: 20px;
-  margin-bottom: -200px;
+  margin-top: 50px;
+  margin-bottom: -150px;
 }
 #workSect > h3{
   color: #f4b860;
@@ -230,11 +231,9 @@ footer {
   padding: 10px 10px 0 10px;
   bottom: 0;
   font-size: 20px;
-  list-style: none;
   align-items: center;
   justify-content: center;
   display: grid;
-  opacity: .9;
   background-color: var(--article-bg);
 }
 footer > p {
