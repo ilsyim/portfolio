@@ -8,7 +8,7 @@ document.querySelector("#favicon")
 const guestMessage = document.querySelector("#message")
 const message = document.querySelector("#message")
 const sections = document.querySelectorAll(".section")
-const navList = document.querySelectorAll(".nav")
+const navList = document.querySelectorAll("nav .nav li")
 const aboutBtn = document.querySelector("#about-button")
 const workBtn = document.querySelector("#work-button")
 const contactBtn = document.querySelector("#contact-button")
@@ -17,25 +17,13 @@ const cardContainer = document.getElementById('card-container')
 const ligthDarkBtn = document.querySelector('#light-dark-button')
 const body = document.querySelector('body')
 const activePage = window.location
-
+const profile = document.getElementById('my-photo')
 /*----------------------------- Event Listeners -----------------------------*/
 
-
+console.log(activePage)
 /*-------------------------------- Functions --------------------------------*/
 // import {projects} from code/sei/labs/ttt-weekend/js/app.js
 
-
-// I want the nav to highlight which section the user is looking at.
-// sections.forEach((section) => {
-//   const sectionTop = section.offsetTop;
-//   if (pageYOffset >= sectionTop - 60) {
-//     current = section.getAttribute("id")
-//   }
-// })
-
-aboutBtn.addEventListener("click", function onClick(){
-
-})
 
 let projectMarkup = projectData.map(project =>
 `
@@ -68,14 +56,25 @@ function toggleLightDark() {
 }
 
 function checkDarkPref() {
- if(
-   window.matchMedia("(prefers-color-scheme:dark)").matches && 
-   body.className !== "dark"
- ) {
-   toggleLightDark()
- }
+  if(
+    window.matchMedia("(prefers-color-scheme:dark)").matches && 
+    body.className !== "dark"
+  ) {
+    toggleLightDark()
+  }
 }
 
 checkDarkPref()
 ligthDarkBtn.addEventListener('click', toggleLightDark)
+
+profile.addEventListener('click', function(event){
+  event.target.style.width = '70%'
+  event.target.style.height = 'auto';
+  setTimeout (function(){
+    event.target.style.width = ''
+  }, 800)
+})
+
+
+
 

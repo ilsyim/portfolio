@@ -111,6 +111,13 @@ nav {
   box-shadow: 0 8px 6px -6px var(--shadow);
   grid-area: nav;
 }
+/* li a:is(:link, :active, :visited){
+  color: #f4b860;
+} */
+/* a:is(:link, :active, :visited).active{
+  color: black;
+  background-color: #f4b860;
+} */
 #name {
   text-decoration: none;
   color: black;
@@ -119,26 +126,20 @@ nav,
 footer {
   grid-column: 1 / 5;
 }
-nav > div {
+#nav {
   display: flex;
   justify-content: flex-end;
   text-decoration: none;
+  font-size: 25px;
   font-weight: bold;
   margin: 0 10px;
 }
-.nav {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 25px;
-  font-weight: bold;
-
-}
-.nav a {
+#nav a {
 	display: block;
 	text-decoration: none;
 	color: var(--text);
 }
-.nav a:hover{
+#nav a:hover{
   color: var(--text);
   background-color: var(--bg);
   border-radius: 10px;
@@ -231,8 +232,7 @@ a {
   color: black;
 }
 footer {
-  color: black;
-  height: 30px;
+  height: auto;
   padding: 10px 10px 0 10px;
   bottom: 0;
   font-size: 20px;
@@ -240,6 +240,11 @@ footer {
   align-items: center;
   justify-content: center;
   display: grid;
+  opacity: .9;
+  background-color: var(--article-bg);
+}
+footer > p {
+  color: var(--article-text);
 }
 @media only screen and (min-width:768px) {
   .card {
