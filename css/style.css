@@ -164,6 +164,7 @@ p {
 }
 #aboutSect {
   font-size: 20px;
+  margin-bottom: -200px;
 }
 #workSect > h3{
   color: #f4b860;
