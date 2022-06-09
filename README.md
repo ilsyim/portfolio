@@ -1,5 +1,4 @@
 # portfolio
-Title: Ilyana Simmons Portfolio
 Portfolio containing information about myself including the work I've done and contact information.
 
 Deployed Portfolio: (https://ilysim-portfolio.netlify.app/)
