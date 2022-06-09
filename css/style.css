@@ -252,6 +252,6 @@ footer > p {
     grid-column: 1 / 5;
   }
   #aboutSect {
-    margin-bottom: auto;
+    margin-bottom: -50px;
   }
 }
