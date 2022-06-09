@@ -19,13 +19,15 @@ body {
   --article-text: black;
   --light-dark-btn-content: 'Dark Mode';
   --border: #b4d4ee;
+  overscroll-behavior: none;
   display: grid;
   background-color: var(--body-bg);
   background: url(../assets/clouds.JPG) no-repeat center center fixed;
+  background-size: cover;
   font-family: 'Merriweather', serif;
   min-height: 100vh;
   margin: 0;
-  font-size: 24px;
+  font-size: clamp(32px, 6vw, 90px);
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: auto;
   grid-template-areas:
@@ -207,11 +209,17 @@ p {
   background-color: #c5ebc3;
   color: #22031f;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 footer {
-  color: #34252F;
+  color: black;
   height: 30px;
   padding: 10px 10px 0 10px;
   bottom: 0;
+  font-size: 20px;
+  list-style: none;
 }
 #light-dark-button {
   background-color: var(--bg);

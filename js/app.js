@@ -16,6 +16,8 @@ const resumeBtn = document.querySelector("#resume-button")
 const cardContainer = document.getElementById('card-container')
 const ligthDarkBtn = document.querySelector('#light-dark-button')
 const body = document.querySelector('body')
+const activePage = window.location
+
 /*----------------------------- Event Listeners -----------------------------*/
 
 
@@ -92,3 +94,4 @@ function checkDarkPref() {
 
 checkDarkPref()
 ligthDarkBtn.addEventListener('click', toggleLightDark)
+
