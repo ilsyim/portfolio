@@ -21,6 +21,7 @@ body {
   --light-dark-btn-content: 'Dark Mode';
   --border: #b4d4ee;
   overscroll-behavior: none;
+  scroll-behavior: smooth;
   display: grid;
   background-color: var(--body-bg);
   background: url(../assets/clouds.JPG) no-repeat center center;
@@ -227,6 +228,16 @@ a {
   text-decoration: none;
   color: black;
 }
+#top-button {
+  background-color: #f4b860;
+  color: black;
+  border: none;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: var(--body-bg);
+}
 footer {
   height: auto;
   padding: 10px 10px 0 10px;
@@ -245,8 +256,7 @@ footer > p {
     width: 100vw;
     margin: 30px 15px 0;
   }
-  nav{
-    width: 100vw;
+  #nav{
     grid-column: 1 / 5;
   }
   footer {

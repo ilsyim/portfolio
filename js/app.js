@@ -18,6 +18,9 @@ const ligthDarkBtn = document.querySelector('#light-dark-button')
 const body = document.querySelector('body')
 const activePage = window.location
 const profile = document.getElementById('my-photo')
+
+const scrollToTopBtn = document.getElementById("top-button")
+const rootElement = document.documentElement
 /*----------------------------- Event Listeners -----------------------------*/
 
 console.log(activePage)
@@ -69,15 +72,21 @@ checkDarkPref()
 ligthDarkBtn.addEventListener("click", toggleLightDark)
 
 profile.addEventListener("click", function(event){
-  event.target.style.width = "50%"
-  event.target.style.height = "auto"
+  event.target.style.width = "300px"
+  event.target.style.height = "300px"
   event.target.style.border = "4px solid #f4b860"
   setTimeout (function(){
     event.target.style.width = ""
+    event.target.style.height = ""
     event.target.style.border = ""
   }, 800)
 })
 
-
-
+function scrollToTop(){
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+scrollToTopBtn.addEventListener("click", scrollToTop)
 

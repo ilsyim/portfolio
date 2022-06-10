@@ -11,6 +11,8 @@ Portfolio with information about myself including the work I've done and contact
 - CSS
 - JavaScript
 - git
+- Bootstrap
+- Google Fonts
 
 Screenshot:
 [<img src="./assets/Portfolio.png">](https://github.com/ilsyim/portfolio/commit/75d34ab161b19523dc17fdefaa2d50b1b900ca21#r75740240)
@@ -21,4 +23,5 @@ Screenshot:
   <a target="_blank" href="https://icons8.com/icon/124385/email-open">Email Open</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 
   ## Icebox:
-  Work on correcting responsive design.
+  Work on correcting responsive design, and as I complete more projects,I want to build on the html pages I already built for the different nav sections.
+
