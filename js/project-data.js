@@ -14,6 +14,14 @@ let projectData = [
     description: 'An app designed for book lovers.'
 
   }
+  {
+    title: 'Social(fx)',
+    deployment: 'https://social-fx.netlify.app/',
+    image:'/assets/landing.png',
+    github:'https://github.com/ilsyim/socialfx-front-end',
+    description: 'MERN stack event planning app.'
+
+  }
 ]
 export {
   projectData
