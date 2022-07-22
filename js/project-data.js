@@ -13,7 +13,7 @@ let projectData = [
     github:'https://github.com/ilsyim/bookcase',
     description: 'An app designed for book lovers.'
 
-  }
+  },
   {
     title: 'Social(fx)',
     deployment: 'https://social-fx.netlify.app/',
