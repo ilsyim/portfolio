@@ -30,8 +30,8 @@ console.log(activePage)
 
 let projectMarkup = projectData.map(project =>
 `
-  <div class="card text-center" style="width: 18rem;">
-    <img src="${project.image}" class="card-img-top" alt="Picture of Tic-Tac-Toe app">
+  <div class="card text-center" style="width: 22rem;">
+    <img src="${project.image}" class="card-img-top" alt="Picture of project">
     <div class="card-body">
       <h5 class="card-title">${project.title}</h5>
       <p class="card-text">${project.description}</p>
@@ -44,7 +44,7 @@ let projectMarkup = projectData.map(project =>
   
   `
   
-  ).join('')
+).join('')
   cardContainer.innerHTML = projectMarkup
 
 message.addEventListener("mouseenter", function(event){
