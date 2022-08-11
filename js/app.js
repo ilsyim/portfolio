@@ -30,7 +30,7 @@ console.log(activePage)
 
 let projectMarkup = projectData.map(project =>
 `
-  <div class="card text-center" style="width: 22rem;">
+  <div class="card text-center" style="width: 24rem;">
     <img src="${project.image}" class="card-img-top" alt="Picture of project">
     <div class="card-body">
       <h5 class="card-title">${project.title}</h5>

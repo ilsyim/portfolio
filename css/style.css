@@ -188,6 +188,7 @@ p {
   justify-content: space-between;
   width: 100%;
   height: 300px;
+  overflow: scroll;
 }
 #contactSect > a {
   text-decoration: none;
@@ -206,6 +207,7 @@ p {
   justify-content: center;
   width: 100%;
   margin-top: 50px;
+  height: auto;
 }
 .card {
   background-color: var(--card-bg);
@@ -216,8 +218,8 @@ p {
   font-size: 25px;
 }
 .card-img-top {
-  /* width: 300px;
-  height: 300px; */
+  /* width: 90%; */
+  /* height: 90%; */
 }
 .card-text {
  /* text "my first project */
@@ -263,7 +265,7 @@ footer {
 footer > p {
   color: var(--article-text);
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:360px) {
   .card {
     width: 100vw;
     margin: 30px 15px 0;
@@ -282,72 +284,94 @@ footer > p {
     display: flex;
     flex-direction: row;
     top: 0;
+    flex-wrap: nowrap;
+    font-size: 16px;
   }
   footer {
     grid-column: 1 / 5;
   }
 
-}
-@media only screen and (min-width: 768px) {
-  /* header {
-    position: sticky;
+  #workSect{
+    align-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: row;
-    top: 0;
+    overflow: scroll;
+  }
+
+  #contactSect {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  #top-button {
+    background-color: #f4b860;
+    color: black;
+    border: none;
     align-items: center;
-  } */
-
-  main {
-    max-width: 1300px;
-    min-height: calc(100vh - 53px);
+    justify-content: center;
+    display: flex;
+    background-color: var(--article-bg);
+    color: var(--article-text);
   }
-
-  .header-logo-container {
-    width: 213px;
-  }
-
-  .page-header h1 {
-    font-size: var(--font-xtreme);
-  }
-  
-  .page-header img {
-    height: 50px;
-    margin-left:20px;
-  }
-  
-  .page-header img:first-of-type {
-    margin-left: 25px;
-  }
-
-  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-    header {
-      /* background: var(--nav-bg);
-      -webkit-backdrop-filter: blur(3px);
-      backdrop-filter: blur(3px); */
-    }
+  footer {
+    height: auto;
+    padding: 10px 10px 0 10px;
+    bottom: 0;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: var(--article-bg);
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  main {
-    min-height: calc(100vh - 55px);
-  }
-  
-  header {
-    /* margin: 20px 20px 0 20px;
-    width: calc(100vw - 40px);
-    max-width: 1920px;
-    top: 20px;
-    background-color: transparent;
-    border-bottom: none; */
+  #workSect > h3{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
   }
 
-  nav,
-  .header-logo-container {
-    /* margin: 0;
-    background: var(--nav-bg-ff);
-    border: var(--borders);
-    border-radius: 18px; */
+  #contactSect {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 200px;
+  }
+
+  #top-button {
+    background-color: #f4b860;
+    color: black;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: var(--article-bg);
+    color: var(--article-text);
+  }
+  footer {
+    height: auto;
+    padding: 10px 10px 0 10px;
+    bottom: 0;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: var(--article-bg);
+  }
+
+  nav {
+    margin: 0;
+    font-size: 18px;
   }
 
 
