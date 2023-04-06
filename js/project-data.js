@@ -15,7 +15,7 @@ let projectData = [
   },
   {
     title: 'bookCase',
-    deployment: 'https://bookcase-ilysim.herokuapp.com/books',
+    deployment: 'https://bookcase.fly.dev/books',
     image:'/assets/bookCase2.png',
     github:'https://github.com/ilsyim/bookcase',
     description: 'An app designed for book lovers to share their reccomendations.'
