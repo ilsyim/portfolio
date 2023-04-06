@@ -1,9 +1,16 @@
 let projectData = [
   {
+    title: 'React Portfolio',
+    deployment: 'https://ilyanasimmons.netlify.app/',
+    image: '/assets/react-portfolio.png',
+    github: 'https://github.com/ilsyim/react-portfolio-front-end',
+    description: 'My most recent portfolio created with React.'
+  },
+  {
     title: 'Tic-Tac-Toe',
     deployment: 'https://ttt-ilysim.netlify.app/',
     image: '/assets/ttt.png',
-    github: 'https://github.com/ilsyim/portfolio',
+    github: 'https://github.com/ilsyim/ttt-weekend',
     description: 'My first project with GA, tic-tac-toe.'
   },
   {
